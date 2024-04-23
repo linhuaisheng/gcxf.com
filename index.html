@@ -491,8 +491,8 @@
           },
           color: ['#2E8CFF', '#FD9133', '#37D2D4', '#19CA88', '#858FF8'],
           legend: {
-            itemWidth: 11,// 标志图形的长度
-            itemHeight: 11,// 标志图形的宽度
+            itemWidth: 6,// 标志图形的长度
+            itemHeight: 6,// 标志图形的宽度
             orient: 'vertical',
             // left: 'right',
             top: '15%',
@@ -550,8 +550,8 @@
             formatter: '{a} <br/>{b} : {c} ({d}%)'
           },
           legend: {
-            itemWidth: 12,// 标志图形的长度
-            itemHeight: 12,// 标志图形的宽度
+            itemWidth: 6,// 标志图形的长度
+            itemHeight: 6,// 标志图形的宽度
             orient: 'vertical',
             // left: 'right',
             top: '5%',
@@ -650,8 +650,8 @@
             formatter: "{a} <br/>{b} : {c} ({d}%)"
           },
           legend: {
-            itemWidth: 15,// 标志图形的长度
-            itemHeight: 15,// 标志图形的宽度
+            itemWidth: 6,// 标志图形的长度
+            itemHeight: 6,// 标志图形的宽度
             orient: 'vertical',
             // left: 'right',
             top: '10%',
@@ -705,14 +705,14 @@
         var departmentChart = echarts.init(document.getElementById('departmentId'));
         var data = dataArr
         var option = {
-          color: ['#FD9133', '#47F6A2', '#37D2D4', '#3493FF'],
+          color: ['#FD9133', '#47F6A2', '#37D2D4', '#3493FF', '#009966', '#FFFF00'],
           tooltip: {
             trigger: 'item',
             formatter: "{a} <br/>{b} : {c} ({d}%)"
           },
           legend: {
-            itemWidth: 15,// 标志图形的长度
-            itemHeight: 15,// 标志图形的宽度
+            itemWidth: 6,// 标志图形的长度
+            itemHeight: 6,// 标志图形的宽度
             orient: 'vertical',
             // left: 'right',
             top: '30%',
@@ -727,7 +727,7 @@
           },
           series: [
             {
-              name: 'XXXX公开占比',
+              name: '公开占比',
               type: 'pie',
               radius: ['50%', '70%'],
               center: ['78%', '52%'],
@@ -737,9 +737,8 @@
                   lineStyle: {
                     type: 'solid',
                     color: '#0EFCFF'
-                  }
-                }
-
+                   }
+                 }
               },
               label: {
                 normal: {
@@ -752,30 +751,30 @@
                   height: 20,
                   fontSize: 8,
                   align: 'center',
-                  color: '#0EFCFF',
+                  //color: '#0EFCFF',
                 }
               },
               data: data
             },
-            {
-              color: '#0EFCFF',
-              type: 'pie',
-              radius: ['55', '56'],
-              center: ['78%', '52%'],
-              data: [100],
-              label: {
-                show: false
-              }
-            },
-            {
-              type: 'pie',
-              radius: ['25', '26'],
-              center: ['78%', '52%'],
-              data: [100],
-              label: {
-                show: false
-              }
-            }
+            // {
+            //   color: '#0EFCFF',
+            //   type: 'pie',
+            //   radius: ['55', '56'],
+            //   center: ['78%', '52%'],
+            //   data: [100],
+            //   label: {
+            //     show: false
+            //   }
+            // },
+            // {
+            //   type: 'pie',
+            //   radius: ['25', '26'],
+            //   center: ['78%', '52%'],
+            //   data: [100],
+            //   label: {
+            //     show: false
+            //   }
+            // }
           ]
         };
         departmentChart.setOption(option)
@@ -789,7 +788,7 @@
         $(".main_bottom_t_l_main").jCarouselLite({
           vertical: true,
           hoverPause: true,
-          visible: 4,
+          visible: 3,
           auto: 1000,
           speed: 500
         });
@@ -799,7 +798,7 @@
         $(".main_bottom_t_l_main2").jCarouselLite({
           vertical: true,
           hoverPause: true,
-          visible: 4,
+          visible: 3,
           auto: 1000,
           speed: 500
         });
@@ -896,7 +895,7 @@
             symbolSize: 0,
             lineStyle: {
               normal: {
-                // color: 'rgba(252,211,3, 1)',
+                color: 'rgba(252,211,3, 1)',
                 width: 0
               }
             },
