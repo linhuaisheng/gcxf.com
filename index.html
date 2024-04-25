@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html {lang="en"; font-size:62.5%;}>
+<html {lang="en" ; font-size:62.5%;}>
+
 <head>
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">  
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="format-detection" content="telephone=no">
-  
- 
+
+
   <title>古辞新风-数据展示</title>
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/reset.css">
@@ -489,7 +491,7 @@
             trigger: 'item',
             formatter: '{a} <br/>{b} : {c} ({d}%)'
           },
-          color: ['#2E8CFF', '#FD9133', '#37D2D4', '#19CA88', '#858FF8'],
+          color: ['#2E8CFF', '#FD9133', '#37D2D4', '#19CA88', '#858FF8', '#FFFF00'],
           legend: {
             itemWidth: 6,// 标志图形的长度
             itemHeight: 6,// 标志图形的宽度
@@ -500,7 +502,7 @@
             data: datas,
             textStyle: { //图例文字的样式
               color: '#fff',
-              fontSize: 8
+              fontSize: 6
             },
           },
           series: [
@@ -727,18 +729,18 @@
           },
           series: [
             {
-              name: '公开占比',
+              name: '学习倾向',
               type: 'pie',
               radius: ['50%', '70%'],
-              center: ['78%', '52%'],
+              center: ['78%', '60%'],
               labelLine: {
                 normal: {
                   length: 12,
                   lineStyle: {
                     type: 'solid',
                     color: '#0EFCFF'
-                   }
-                 }
+                  }
+                }
               },
               label: {
                 normal: {
@@ -1111,7 +1113,9 @@
       contentFn: function () {
         var resArr = [
           { name: '测试11', value: 30 },
-          { name: '测试22', value: 50 },
+          { name: '测试22', value: 34 },
+          { name: '测试33', value: 40 },
+          { name: '测试44', value: 50 },
           { name: '测试55', value: 33 },
           { name: '测试66', value: 80 },
         ]
@@ -1119,15 +1123,11 @@
         var caiArr = []
         var cunArr = []
         var danArr = []
-        var junArr = []
-        var zhenArr = []
         for (var i = 0; i < resArr.length; i++) {
           nameArr.push(resArr[i].name)
           caiArr.push(resArr[i].value)
           cunArr.push(resArr[i].value)
           danArr.push(resArr[i].value)
-          junArr.push(resArr[i].value)
-          zhenArr.push(resArr[i].value)
         }
 
         var contentChart = echarts.init(document.getElementById('contentId'));
@@ -1138,7 +1138,7 @@
           legend: {
             x: '35%',
             y: '0%',
-            data: ["财务", "村务", "党务", "居务", "政务"],
+            data: ["财务", "村务", "党务"],
             textStyle: {
               color: "#fff",
               fontSize: 8
@@ -1232,7 +1232,7 @@
 
             }
           ],
-          color: ['#0EFCFF', '#FD9133'],
+          color: ['#66CCCC', '#FD9133', '#CCFFFF'],
           grid: {
             left: '5%',
             right: '1%',
@@ -1242,7 +1242,7 @@
           },
           series: [
             {
-              barWidth: '10%',
+              barWidth: '20%',
               name: '财务',
               type: 'bar',
               data: caiArr,
@@ -1261,20 +1261,6 @@
               type: 'bar',
               data: danArr,
             },
-            {
-              animationDuration: 2500,
-              barWidth: '20%',
-              name: '居务',
-              type: 'bar',
-              data: junArr,
-            },
-            {
-              animationDuration: 2500,
-              barWidth: '20%',
-              name: '政务',
-              type: 'bar',
-              data: zhenArr,
-            }
           ]
         };
         contentChart.setOption(option)
@@ -1292,12 +1278,20 @@
           { name: '2024/04', value: 350 },
           { name: '2024/05', value: 363 },
           { name: '2024/06', value: 800 },
-        ]
+        ];
+        var resArr_ed = [
+          { name: '2024/01', value: 410 },
+          { name: '2024/02', value: 500 },
+          { name: '2024/03', value: 100 },
+          { name: '2024/04', value: 700 },
+          { name: '2024/05', value: 120 },
+          { name: '2024/06', value: 160 },
+        ];
         var xunArr = []
         var jingArr = []
         var dateArr = []
         for (var i = 0; i < resArr.length; i++) {
-          xunArr.push(resArr[i].value)
+          xunArr.push(resArr[i].value, resArr_ed[i].value)
           jingArr.push(resArr[i].value)
           dateArr.push(resArr[i].name)
         }
