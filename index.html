@@ -69,8 +69,8 @@
             <div class="main_top_middle_top_title">
               <img class="title_bg" src="./images/title_bg.png" />
               古辞新风数据可视化平台
-              <a class="title_web" href="" target="blank">历史记录</a>
-              <a class="title_admin" href="" target="blank">web网页</a>
+              <a class="title_web" href="https://linhuaisheng.github.io/gcxf.com/" target="blank">刷新</a>
+              <a class="title_admin" href="" target="blank">返回</a>
             </div>
             <div class="main_top_middle_num_title">今日使用人数</div>
             <div class="main_top_middle_num">
@@ -154,27 +154,27 @@
           <div class="main_middle_list">
             <img src="./images/main_middle.png" />
             <div class="main_list_title main_list_title1">四川</div>
-            <span class="main_list_title_num main_list_title_num1">0</span>
+            <span class="main_list_title_num main_list_title_num1">10</span>
           </div>
           <div class="main_middle_list">
             <img src="./images/main_middle.png" />
             <div class="main_list_title main_list_title2">重庆</div>
-            <span class="main_list_title_num main_list_title_num2">0</span>
+            <span class="main_list_title_num main_list_title_num2">10</span>
           </div>
           <div class="main_middle_list">
             <img src="./images/main_middle.png" />
             <div class="main_list_title main_list_title3">山东</div>
-            <span class="main_list_title_num main_list_title_num3">0</span>
+            <span class="main_list_title_num main_list_title_num3">10</span>
           </div>
           <div class="main_middle_list">
             <img src="./images/main_middle.png" />
             <div class="main_list_title main_list_title4">河南</div>
-            <span class="main_list_title_num main_list_title_num4">0</span>
+            <span class="main_list_title_num main_list_title_num4">10</span>
           </div>
           <div class="main_middle_list">
             <img src="./images/main_middle.png" />
             <div class="main_list_title main_list_title5">河北</div>
-            <span class="main_list_title_num main_list_title_num5">0</span>
+            <span class="main_list_title_num main_list_title_num5">10</span>
           </div>
         </div>
         <div class="main_bottom">
@@ -287,7 +287,7 @@
             </div>
             <div class="main_bottom_b_middle1">
               <img src="./images/main_bootm_middle.png" />
-              <div class="main_bottom_b_title">关注XXXX占比</div>
+              <div class="main_bottom_b_title">活跃板块详情</div>
               <div id="contentId" class="main_bottom_b_con main_bottom_b_con2"></div>
             </div>
             <div class="main_bottom_b_middle2">
@@ -297,7 +297,7 @@
             </div>
             <div class="main_bottom_b_right">
               <img src="./images/main_bottom_bottom.png" />
-              <div class="main_bottom_b_title">XXX公开数量</div>
+              <div class="main_bottom_b_title">诗词收藏详情</div>
               <div id="yearsNumId" class="main_bottom_b_con"></div>
             </div>
           </div>
@@ -351,11 +351,11 @@
       baseInfo: function () {
         var baseChart = echarts.init(document.getElementById("baseId"));
         var charts = [
-          { name: "四川", num: 200 },
-          { name: "重庆", num: 300 },
-          { name: "云南", num: 400 },
-          { name: "贵州", num: 500 },
-          { name: "陕西", num: 300 },
+          { name: "四川", num: 322 },
+          { name: "重庆", num: 297 },
+          { name: "云南", num: 177 },
+          { name: "贵州", num: 421 },
+          { name: "陕西", num: 211 },
         ];
         var color = [
           "rgba(100,255,249",
@@ -412,8 +412,8 @@
           grid: {
             // borderWidth: 1,
             top: "10%",
-            left: "30%",
-            right: "20%",
+            left: "40%",
+            right: "10%",
             bottom: "3%",
           },
           color: color,
@@ -618,7 +618,7 @@
                   show: false,
                 },
               },
-              name: "XX公开数量",
+              name: "诗词收录数量",
               data: data,
             },
             // 边框的设置
@@ -710,7 +710,7 @@
             data: data,
           },
           series: {
-            name: "三务公开数量",
+            name: "各地使用数量",
             type: "pie",
             animationDuration: 1500,
             radius: ["70%", "90%"],
@@ -801,6 +801,7 @@
               },
               data: data,
             },
+            //两个不能自动调大小的环，装饰用
             // {
             //   color: '#0EFCFF',
             //   type: 'pie',
@@ -1191,7 +1192,7 @@
           legend: {
             x: "35%",
             y: "0%",
-            data: ["财务", "村务", "党务"],
+            data: ["测试A", "测试B", "测试C"],
             textStyle: {
               color: "#fff",
               fontSize: 8,
@@ -1225,7 +1226,7 @@
             {
               type: "value",
               scale: true,
-              name: "单位：%",
+              name: "人数",
               nameTextStyle: {
                 color: "rgba(255,255,255,.7)",
                 fontSize: 8,
@@ -1303,21 +1304,21 @@
           series: [
             {
               barWidth: "20%",
-              name: "财务",
+              name: "测试A",
               type: "bar",
               data: caiArr,
             },
             {
               animationDuration: 2500,
               barWidth: "20%",
-              name: "村务",
+              name: "测试B",
               type: "bar",
               data: cunArr,
             },
             {
               animationDuration: 2500,
               barWidth: "20%",
-              name: "党务",
+              name: "测试C",
               type: "bar",
               data: danArr,
             },
@@ -1397,7 +1398,7 @@
             {
               type: "value",
               scale: true,
-              name: "单位：%",
+              name: "人数",
               nameTextStyle: {
                 color: "rgba(255,255,255,.7)",
                 fontSize: 8,
