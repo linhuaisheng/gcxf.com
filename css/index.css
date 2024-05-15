@@ -275,24 +275,27 @@
 }
 .main_top_middle_num {
   float: left;
-  width: 55%;
-  height: 23%;
+  width: 50%;
+  height: 20%;
   margin: 0.7% auto;
   margin-top: 1.5%;
 }
 .main_top_middle_num_list {
   position: relative;
   float: left;
-  height: 100%;
+  height: 90%;
   width: 12%;
-  margin-left: 2.6%;
-  font-size: 2vw;
+  margin-left: 8.5px;
+  font-size: 2.5ch;
   font-weight: bold;
   color: #0efcff;
-  line-height: 240%;
+  line-height: 20%;
 }
 .main_top_middle_num_list p {
-  text-align: center;
+  display: flex;
+  text-align: left;
+  align-items: center; /* 垂直居中 */
+  justify-content: left; /* 水平居中 */
 }
 .main_top_middle_num_list:nth-child(1) {
   margin-left: 0;
@@ -334,13 +337,13 @@
 }
 .main_top_echarts_pie {
   width: 100%;
-  height: 90%;
+  height: 85%;
 }
 .main_top_right {
   float: right;
 }
 .main_top_right .main_top_left_top_con_left {
-  float: left;
+  float: flex;
   height: 48%;
   width: 49%;
   background: #37d2d4;
