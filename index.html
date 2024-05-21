@@ -71,7 +71,7 @@
             <a class="title_web" href="https://linhuaisheng.github.io/gcxf.com/" target="blank">刷新</a>
             <a class="title_admin" href="" target="blank">返回</a>
           </div>
-          <div class="main_top_middle_num_title">今日使用人数</div>
+          <div class="main_top_middle_num_title">使用<br>人数</div>
           <div class="main_top_middle_num">
             <div class="main_top_middle_num_list">
               <img src="./images/center_num.png" />
@@ -523,13 +523,10 @@
       // 诗词收录占比
       publicityFn: function () {
         var dataArr = [
-          { name: "五言绝句", value: 300 },
-          { name: "七言绝句", value: 500 },
-          { name: "五言律诗", value: 400 },
-          { name: "七言绝句", value: 350 },
-          { name: "五言古诗", value: 300 },
+          { name: "绝句", value: 430 },
+          { name: "律诗", value: 540 },
           { name: "乐府诗", value: 363 },
-          { name: "古体诗", value: 800 },
+          { name: "古体诗", value: 500 },
         ];
         // for(var i = 0; i < res.list.length; i++) {
         //     dataArr.push({name: res.list[i].name, value: res.list[i].num})
@@ -614,9 +611,9 @@
           publicitChart.setOption(option);
         }, 6000);
       },
-      // 三务公开数量
+      // 使用人数
       threeTasksFn: function () {
-        let names = "666666";
+        let names = "001038";
         if (6 - names.length > 0) {
           for (g = 0; g < 6 - names.length; g++) {
             $(".main_top_middle_num_list" + (6 - g)).text("0");
@@ -780,22 +777,22 @@
           departmentChart.setOption(option);
         }, 12000);
       },
-      // 办事指南
+      // 学习足迹
       guideFn: function () {
         $(".main_bottom_t_l_main").jCarouselLite({
           vertical: true,
           hoverPause: true,
-          visible: 3,
+          visible: 4,
           auto: 1000,
           speed: 500,
         });
       },
-      // 政策解读
+      // 热门诗词
       policyFn: function () {
         $(".main_bottom_t_l_main2").jCarouselLite({
           vertical: true,
           hoverPause: true,
-          visible: 3,
+          visible: 4,
           auto: 1000,
           speed: 500,
         });

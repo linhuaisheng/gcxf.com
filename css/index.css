@@ -283,7 +283,8 @@
 .main_top_middle_num_list {
   position: relative;
   float: left;
-  height: 100%;
+  top: 20%;
+  height: 34%;
   width: 12%;
   margin-left: 2.6%;
   font-size: 2vw;
