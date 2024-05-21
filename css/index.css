@@ -25,11 +25,11 @@
 .main_top_left_top {
   position: relative;
   width: 100%;
-  height: 46%;
+  height: 45%;
   /* background: green; */
 }
 .main_top_left_bottom {
-  margin-top: 4%;
+  margin-top: 8%;
 }
 .main_top_left_bottom_num {
   width: 100%;
@@ -113,8 +113,8 @@
   margin: auto;
   margin-top: 3%;
   color: white;
-  /* margin-left: 4%; */
-  /* text-indent: .5vw; */
+  margin-left: 4%;
+  text-indent: .5vw;
   font-size: 0.7vw;
   /* letter-spacing: .15vw; */
 }
@@ -267,7 +267,7 @@
 .main_top_middle_num_title {
   float: left;
   color: #0efcff;
-  font-size: 1.5vw;
+  font-size: 3vw;
   margin-left: 13%;
   line-height: 4.5vw;
   width: 18%;
@@ -275,8 +275,8 @@
 }
 .main_top_middle_num {
   float: left;
-  width: 55%;
-  height: 23%;
+  width: 50%;
+  height: 20%;
   margin: 0.7% auto;
   margin-top: 1.5%;
 }
@@ -290,10 +290,13 @@
   font-size: 2vw;
   font-weight: bold;
   color: #0efcff;
-  line-height: 240%;
+  line-height: 30%;
 }
 .main_top_middle_num_list p {
-  text-align: center;
+  display: flex;
+  text-align: left;
+  align-items: center; /* 垂直居中 */
+  justify-content: left; /* 水平居中 */
 }
 .main_top_middle_num_list:nth-child(1) {
   margin-left: 0;
@@ -335,13 +338,13 @@
 }
 .main_top_echarts_pie {
   width: 100%;
-  height: 90%;
+  height: 85%;
 }
 .main_top_right {
   float: right;
 }
 .main_top_right .main_top_left_top_con_left {
-  float: left;
+  float: flex;
   height: 48%;
   width: 49%;
   background: #37d2d4;
@@ -546,7 +549,7 @@
   width: 90%;
   height: 75%;
   margin: auto;
-  margin-top: 8%;
+  margin-top: 10%;
 }
 .main_bottom_b_con2 {
   height: 70%;

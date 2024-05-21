@@ -42,17 +42,17 @@
                   <p>七言律诗</p>
                 </div>
                 <div class="main_top_left_t_c_l_right">
-                  <span class="main_top_left_c_l_n main_top_left_c_l_n5">0</span>
+                  <span class="main_top_left_c_l_n main_top_left_c_l_n5">440</span>
                   <p>五言古诗</p>
                 </div>
               </div>
               <div class="main_top_left_top_con_right main_top_left_top_con_right2">
                 <div class="main_top_left_t_c_r_left">
-                  <span class="main_top_left_c_l_n">0</span>
+                  <span class="main_top_left_c_l_n">200</span>
                   <p>乐府诗</p>
                 </div>
                 <div class="main_top_left_t_c_r_right">
-                  <span class="main_top_left_c_l_n">0</span>
+                  <span class="main_top_left_c_l_n">350</span>
                   <p>古体诗</p>
                 </div>
               </div>
@@ -75,27 +75,23 @@
           <div class="main_top_middle_num">
             <div class="main_top_middle_num_list">
               <img src="./images/center_num.png" />
-              <p class="main_top_middle_num_list6">0</p>
+              <p class="main_top_middle_num_list">0</p>
             </div>
             <div class="main_top_middle_num_list">
               <img src="./images/center_num.png" />
-              <p class="main_top_middle_num_list5">0</p>
+              <p class="main_top_middle_num_list">3</p>
             </div>
             <div class="main_top_middle_num_list">
               <img src="./images/center_num.png" />
-              <p class="main_top_middle_num_list4">0</p>
+              <p class="main_top_middle_num_list">2</p>
             </div>
             <div class="main_top_middle_num_list">
               <img src="./images/center_num.png" />
-              <p class="main_top_middle_num_list3">0</p>
+              <p class="main_top_middle_num_list">1</p>
             </div>
             <div class="main_top_middle_num_list">
               <img src="./images/center_num.png" />
-              <p class="main_top_middle_num_list2">0</p>
-            </div>
-            <div class="main_top_middle_num_list">
-              <img src="./images/center_num.png" />
-              <p class="main_top_middle_num_list1">0</p>
+              <p class="main_top_middle_num_list">9</p>
             </div>
           </div>
           <div class="main_top_middle_bottom">
@@ -153,27 +149,27 @@
         <div class="main_middle_list">
           <img src="./images/main_middle.png" />
           <div class="main_list_title main_list_title1">四川</div>
-          <span class="main_list_title_num main_list_title_num1">10</span>
+          <span class="main_list_title_num main_list_title_num1">0</span>
         </div>
         <div class="main_middle_list">
           <img src="./images/main_middle.png" />
           <div class="main_list_title main_list_title2">重庆</div>
-          <span class="main_list_title_num main_list_title_num2">10</span>
+          <span class="main_list_title_num main_list_title_num2">0</span>
         </div>
         <div class="main_middle_list">
           <img src="./images/main_middle.png" />
           <div class="main_list_title main_list_title3">山东</div>
-          <span class="main_list_title_num main_list_title_num3">10</span>
+          <span class="main_list_title_num main_list_title_num3">0</span>
         </div>
         <div class="main_middle_list">
           <img src="./images/main_middle.png" />
           <div class="main_list_title main_list_title4">河南</div>
-          <span class="main_list_title_num main_list_title_num4">10</span>
+          <span class="main_list_title_num main_list_title_num4">0</span>
         </div>
         <div class="main_middle_list">
           <img src="./images/main_middle.png" />
           <div class="main_list_title main_list_title5">河北</div>
-          <span class="main_list_title_num main_list_title_num5">10</span>
+          <span class="main_list_title_num main_list_title_num5">0</span>
         </div>
       </div>
       <div class="main_bottom">
@@ -523,10 +519,13 @@
       // 诗词收录占比
       publicityFn: function () {
         var dataArr = [
-          { name: "绝句", value: 430 },
-          { name: "律诗", value: 540 },
+          { name: "五言绝句", value: 300 },
+          { name: "七言绝句", value: 500 },
+          { name: "五言律诗", value: 400 },
+          { name: "七言绝句", value: 350 },
+          { name: "五言古诗", value: 300 },
           { name: "乐府诗", value: 363 },
-          { name: "古体诗", value: 500 },
+          { name: "古体诗", value: 800 },
         ];
         // for(var i = 0; i < res.list.length; i++) {
         //     dataArr.push({name: res.list[i].name, value: res.list[i].num})
@@ -690,7 +689,7 @@
           { name: "清", value: 16 },
         ];
         // 中间滚动数据展示
-        for (var j = 1; j < dataArr.length; j++) {
+        for (var j = 0; j < dataArr.length; j++) {
           $(".main_list_title_num" + (j + 1))
             .addClass("counter-value")
             .text(dataArr[j].value);
@@ -1143,10 +1142,10 @@
             data: ["一月", "二月", "三月"],
             textStyle: {
               color: "#fff",
-              fontSize: 8,
+              fontSize: 3,
             },
-            itemWidth: 10,
-            itemHeight: 10,
+            itemWidth: 3,
+            itemHeight: 3,
           },
           calculable: true,
           xAxis: [
@@ -1156,7 +1155,7 @@
               axisLabel: {
                 interval: 0,
                 textStyle: {
-                  fontSize: 8,
+                  fontSize: 6,
                   color: "rgba(255,255,255,.7)",
                 },
               },
@@ -1177,7 +1176,7 @@
               name: "人数",
               nameTextStyle: {
                 color: "rgba(255,255,255,.7)",
-                fontSize: 8,
+                fontSize: 4,
               },
               max: 100,
               min: 0,
@@ -1349,7 +1348,7 @@
               name: "人数",
               nameTextStyle: {
                 color: "rgba(255,255,255,.7)",
-                fontSize: 8,
+                fontSize: 6,
               },
               max: 1000,
               min: 0,
