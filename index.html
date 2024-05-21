@@ -42,17 +42,17 @@
                   <p>七言律诗</p>
                 </div>
                 <div class="main_top_left_t_c_l_right">
-                  <span class="main_top_left_c_l_n main_top_left_c_l_n5">440</span>
+                  <span class="main_top_left_c_l_n main_top_left_c_l_n5">0</span>
                   <p>五言古诗</p>
                 </div>
               </div>
               <div class="main_top_left_top_con_right main_top_left_top_con_right2">
                 <div class="main_top_left_t_c_r_left">
-                  <span class="main_top_left_c_l_n">200</span>
+                  <span class="main_top_left_c_l_n">0</span>
                   <p>乐府诗</p>
                 </div>
                 <div class="main_top_left_t_c_r_right">
-                  <span class="main_top_left_c_l_n">350</span>
+                  <span class="main_top_left_c_l_n">0</span>
                   <p>古体诗</p>
                 </div>
               </div>
@@ -75,23 +75,27 @@
           <div class="main_top_middle_num">
             <div class="main_top_middle_num_list">
               <img src="./images/center_num.png" />
-              <p class="main_top_middle_num_list">0</p>
+              <p class="main_top_middle_num_list6">0</p>
             </div>
             <div class="main_top_middle_num_list">
               <img src="./images/center_num.png" />
-              <p class="main_top_middle_num_list">3</p>
+              <p class="main_top_middle_num_list5">0</p>
             </div>
             <div class="main_top_middle_num_list">
               <img src="./images/center_num.png" />
-              <p class="main_top_middle_num_list">2</p>
+              <p class="main_top_middle_num_list4">0</p>
             </div>
             <div class="main_top_middle_num_list">
               <img src="./images/center_num.png" />
-              <p class="main_top_middle_num_list">1</p>
+              <p class="main_top_middle_num_list3">0</p>
             </div>
             <div class="main_top_middle_num_list">
               <img src="./images/center_num.png" />
-              <p class="main_top_middle_num_list">9</p>
+              <p class="main_top_middle_num_list2">0</p>
+            </div>
+            <div class="main_top_middle_num_list">
+              <img src="./images/center_num.png" />
+              <p class="main_top_middle_num_list1">0</p>
             </div>
           </div>
           <div class="main_top_middle_bottom">
@@ -149,27 +153,27 @@
         <div class="main_middle_list">
           <img src="./images/main_middle.png" />
           <div class="main_list_title main_list_title1">四川</div>
-          <span class="main_list_title_num main_list_title_num1">0</span>
+          <span class="main_list_title_num main_list_title_num1">10</span>
         </div>
         <div class="main_middle_list">
           <img src="./images/main_middle.png" />
           <div class="main_list_title main_list_title2">重庆</div>
-          <span class="main_list_title_num main_list_title_num2">0</span>
+          <span class="main_list_title_num main_list_title_num2">10</span>
         </div>
         <div class="main_middle_list">
           <img src="./images/main_middle.png" />
           <div class="main_list_title main_list_title3">山东</div>
-          <span class="main_list_title_num main_list_title_num3">0</span>
+          <span class="main_list_title_num main_list_title_num3">10</span>
         </div>
         <div class="main_middle_list">
           <img src="./images/main_middle.png" />
           <div class="main_list_title main_list_title4">河南</div>
-          <span class="main_list_title_num main_list_title_num4">0</span>
+          <span class="main_list_title_num main_list_title_num4">10</span>
         </div>
         <div class="main_middle_list">
           <img src="./images/main_middle.png" />
           <div class="main_list_title main_list_title5">河北</div>
-          <span class="main_list_title_num main_list_title_num5">0</span>
+          <span class="main_list_title_num main_list_title_num5">10</span>
         </div>
       </div>
       <div class="main_bottom">
@@ -519,13 +523,10 @@
       // 诗词收录占比
       publicityFn: function () {
         var dataArr = [
-          { name: "五言绝句", value: 300 },
-          { name: "七言绝句", value: 500 },
-          { name: "五言律诗", value: 400 },
-          { name: "七言绝句", value: 350 },
-          { name: "五言古诗", value: 300 },
+          { name: "绝句", value: 430 },
+          { name: "律诗", value: 540 },
           { name: "乐府诗", value: 363 },
-          { name: "古体诗", value: 800 },
+          { name: "古体诗", value: 500 },
         ];
         // for(var i = 0; i < res.list.length; i++) {
         //     dataArr.push({name: res.list[i].name, value: res.list[i].num})
@@ -556,7 +557,7 @@
           series: [
             // 主要展示层的
             {
-              radius: ["70%", "90%"],
+              radius: ["50%", "40%"],
               center: ["25%", "50%"],
               type: "pie",
               label: {
@@ -570,7 +571,7 @@
             },
             // 边框的设置
             {
-              radius: ["50%", "55%"],
+              radius: ["32%", "40%"],
               center: ["25%", "50%"],
               type: "pie",
               label: {
@@ -660,7 +661,7 @@
             name: "各地使用数量",
             type: "pie",
             animationDuration: 1500,
-            radius: ["70%", "90%"],
+            radius: ["50%", "33%"],
             center: ["25%", "50%"],
             roseType: "radius",
             label: {
@@ -686,7 +687,6 @@
           { name: "唐", value: 87 },
           { name: "宋", value: 67 },
           { name: "明", value: 33 },
-          { name: "清", value: 16 },
         ];
         // 中间滚动数据展示
         for (var j = 0; j < dataArr.length; j++) {
@@ -721,11 +721,11 @@
             {
               name: "学习倾向",
               type: "pie",
-              radius: ["50%", "70%"],
-              center: ["78%", "60%"],
+              radius: ["40%", "30%"],
+              center: ["70%", "63%"],
               labelLine: {
                 normal: {
-                  length: 12,
+                  length: 5,
                   lineStyle: {
                     type: "solid",
                     color: "#0EFCFF",
@@ -743,7 +743,7 @@
                   height: 20,
                   fontSize: 8,
                   align: "center",
-                  //color: '#0EFCFF',
+                  color: '#0EFCFF',
                 },
               },
               data: data,
@@ -910,8 +910,6 @@
           { name: "卢*嘉", value: 21, cai: 35, cun: 25, dan: 32, jun: 26 },
           { name: "罗*", value: 20, cai: 32, cun: 22, dan: 32, jun: 22 },
           { name: "唐*贤", value: 25, cai: 28, cun: 32, dan: 28, jun: 18 },
-          { name: "邓*燕", value: 16, cai: 28, cun: 38, dan: 18, jun: 28 },
-          { name: "刘*", value: 28, cai: 27, cun: 25, dan: 32, jun: 22 },
         ];
         var nameArr = [];
         var caiArr = [];
@@ -1068,40 +1066,40 @@
               },
               data: _data3,
             },
-            {
-              type: "bar",
-              stack: "2",
-              name: "明清小说",
-              legendHoverLink: false,
-              barWidth: 20,
-              label: _label,
-              itemStyle: {
-                normal: {
-                  color: "#19CA88",
-                },
-                emphasis: {
-                  color: "#19CA88",
-                },
-              },
-              data: _data4,
-            },
-            {
-              type: "bar",
-              stack: "2",
-              name: "楚辞",
-              legendHoverLink: false,
-              barWidth: 20,
-              label: _label,
-              itemStyle: {
-                normal: {
-                  color: "#0EFCFF",
-                },
-                emphasis: {
-                  color: "#0EFCFF",
-                },
-              },
-              data: _data5,
-            },
+            // {
+            //   type: "bar",
+            //   stack: "2",
+            //   name: "明清小说",
+            //   legendHoverLink: false,
+            //   barWidth: 20,
+            //   label: _label,
+            //   itemStyle: {
+            //     normal: {
+            //       color: "#19CA88",
+            //     },
+            //     emphasis: {
+            //       color: "#19CA88",
+            //     },
+            //   },
+            //   data: _data4,
+            // },
+            // {
+            //   type: "bar",
+            //   stack: "2",
+            //   name: "楚辞",
+            //   legendHoverLink: false,
+            //   barWidth: 20,
+            //   label: _label,
+            //   itemStyle: {
+            //     normal: {
+            //       color: "#0EFCFF",
+            //     },
+            //     emphasis: {
+            //       color: "#0EFCFF",
+            //     },
+            //   },
+            //   data: _data5,
+            // },
           ],
         };
         yearsNumChart.setOption(option);
@@ -1142,10 +1140,10 @@
             data: ["一月", "二月", "三月"],
             textStyle: {
               color: "#fff",
-              fontSize: 3,
+              fontSize: 8,
             },
-            itemWidth: 3,
-            itemHeight: 3,
+            itemWidth: 10,
+            itemHeight: 10,
           },
           calculable: true,
           xAxis: [
@@ -1155,7 +1153,7 @@
               axisLabel: {
                 interval: 0,
                 textStyle: {
-                  fontSize: 6,
+                  fontSize: 8,
                   color: "rgba(255,255,255,.7)",
                 },
               },
@@ -1176,7 +1174,7 @@
               name: "人数",
               nameTextStyle: {
                 color: "rgba(255,255,255,.7)",
-                fontSize: 4,
+                fontSize: 8,
               },
               max: 100,
               min: 0,
@@ -1348,7 +1346,7 @@
               name: "人数",
               nameTextStyle: {
                 color: "rgba(255,255,255,.7)",
-                fontSize: 6,
+                fontSize: 8,
               },
               max: 1000,
               min: 0,
