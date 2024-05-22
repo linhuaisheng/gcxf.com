@@ -900,7 +900,7 @@
           coverageChart.setOption(option);
         }, 10000);
       },
-      // 本年公开数量
+      // 诗词收藏详情
       yearsNumFn: function () {
         var resArr = [
           { name: "何*", value: 30, cai: 35, cun: 20, dan: 20, jun: 20 },
@@ -930,8 +930,8 @@
           _data1 = caiArr.reverse(),
           _data2 = cunArr.reverse(),
           _data3 = danArr.reverse();
-        _data4 = junArr.reverse();
-        _data5 = zenArr.reverse();
+          _data4 = junArr.reverse();
+          _data5 = zenArr.reverse();
         var fomatter_fn = function (v) {
           return ((v.value / _max) * 100).toFixed(3);
         };
@@ -942,7 +942,7 @@
             formatter: fomatter_fn,
             textStyle: {
               color: "#fff",
-              fontSize: 8,
+              fontSize: 6,
             },
           },
         };
@@ -1018,7 +1018,7 @@
               stack: "2",
               label: _label,
               legendHoverLink: false,
-              barWidth: 7,
+              barWidth: '20%',
               itemStyle: {
                 normal: {
                   color: "#FD9133",
@@ -1034,7 +1034,7 @@
               name: "宋词",
               stack: "2",
               legendHoverLink: false,
-              barWidth: 7,
+              barWidth: '20%',
               label: _label,
               itemStyle: {
                 normal: {
@@ -1051,7 +1051,7 @@
               stack: "2",
               name: "元曲",
               legendHoverLink: false,
-              barWidth: 7,
+              barWidth: '20%',
               label: _label,
               itemStyle: {
                 normal: {
@@ -1068,7 +1068,7 @@
               stack: "2",
               name: "明清小说",
               legendHoverLink: false,
-              barWidth: 7,
+              barWidth: '20%',
               label: _label,
               itemStyle: {
                 normal: {
@@ -1085,7 +1085,7 @@
               stack: "2",
               name: "楚辞",
               legendHoverLink: false,
-              barWidth: 7,
+              barWidth: '20%',
               label: _label,
               itemStyle: {
                 normal: {
