@@ -904,9 +904,9 @@
       yearsNumFn: function () {
         var resArr = [
           { name: "何*", value: 30, cai: 35, cun: 20, dan: 20, jun: 20 },
-          { name: "卢*嘉", value: 21, cai: 35, cun: 25, dan: 32, jun: 26 },
-          { name: "罗*", value: 20, cai: 32, cun: 22, dan: 32, jun: 22 },
-          { name: "唐*贤", value: 25, cai: 28, cun: 32, dan: 28, jun: 18 },
+          { name: "卢*霏", value: 21, cai: 35, cun: 25, dan: 32, jun: 26 },
+          { name: "罗*怡", value: 20, cai: 32, cun: 22, dan: 32, jun: 22 },
+          { name: "严*林", value: 25, cai: 28, cun: 32, dan: 28, jun: 18 },
         ];
         var nameArr = [];
         var caiArr = [];
@@ -924,7 +924,7 @@
         }
         var yearsNumChart = echarts.init(document.getElementById("yearsNumId"));
         var spNum = 5,
-          _max = 100;
+          _max = 75;
         var y_data = nameArr.reverse();
         var _datamax = [100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100],
           _data1 = caiArr.reverse(),
@@ -1239,9 +1239,9 @@
           color: ["#66CCCC", "#FD9133", "#CCFFFF"],
           grid: {
             left: "5%",
-            right: "1%",
+            right: "5%",
             top: "25%",
-            bottom: "15%",
+            bottom: "25%",
             // containLabel: true
           },
           series: [
@@ -1412,9 +1412,9 @@
           color: ["#2E8CFF", "#38EB70"],
           grid: {
             left: "5%",
-            right: "1%",
+            right: "5%",
             top: "25%",
-            bottom: "15%",
+            bottom: "25%",
             // containLabel: true
           },
           series: [
