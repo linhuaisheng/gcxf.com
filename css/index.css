@@ -3,7 +3,7 @@
 /**/
 .main_con {
   position: absolute;
-  width: 98%;
+  width: auto;
   height: 95%;
   left: 0;
   right: 0;
@@ -14,7 +14,8 @@
 }
 .main_top {
   width: 100%;
-  height: 37%;
+  height: 40%;
+  bottom: 10%;
 }
 .main_top_left {
   float: left;
@@ -30,6 +31,7 @@
 }
 .main_top_left_bottom {
   margin-top: 16%;
+  margin-bottom: 1%;
 }
 .main_top_left_bottom_num {
   width: 100%;
@@ -120,8 +122,8 @@
 }
 .main_top_left_top_con span {
   display: inline-block;
-  margin-top: 1.5vw;
-  text-indent: 0.1vw;
+  margin-top: 1.2vw;
+  text-indent: 0.2vw;
 }
 .main_top_left_top_con_left {
   float: left;
@@ -311,6 +313,7 @@
   width: 100%;
   height: 49.8%;
   margin-top: 0.5%;
+  margin-bottom: 1%;
 }
 .main_top_middle_bottom_echarts {
   position: relative;
