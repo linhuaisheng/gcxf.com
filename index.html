@@ -424,7 +424,7 @@
               inside: false,
               textStyle: {
                 color: "#38E1E1",
-                fontSize: 6,
+                fontSize: 4,
               },
               formatter: function (value, index) {
                 return `${charts[index].name}`;
@@ -438,7 +438,7 @@
             {
               name: "",
               type: "bar",
-              barWidth: "60%", // 调整条形图宽度  
+              barWidth: "40%", // 调整条形图宽度  
               data: lineY,
               animationDuration: 1500,
               label: {
@@ -797,17 +797,17 @@
       // 主要关注内容区域占比
       coverageFn: function () {
         var resArr = [
-          { name: "五言绝句", value: 600 },
-          { name: "七言绝句", value: 500 },
-          { name: "五言律诗", value: 540 },
-          { name: "七言律诗", value: 650 },
-          { name: "乐府诗", value: 663 },
-          { name: "古体诗", value: 600 },
+          { name: "绝句", value: 600 },
+          { name: "律诗", value: 500 },
+          { name: "古诗", value: 540 },
+          { name: "楚辞", value: 650 },
+          { name: "汉赋", value: 663 },
+          { name: "元曲", value: 300 },
         ];
         var indicatorArr = [];
         var numArr = [];
         for (var i = 0; i < resArr.length; i++) {
-          indicatorArr.push({ name: resArr[i].name, max: 1000 });
+          indicatorArr.push({ name: resArr[i].name, max: 700 });
           numArr.push(resArr[i].value);
         }
         var data = [
@@ -834,16 +834,16 @@
           },
 
           radar: {
-            // shape: 'circle',
-            radius: "50%",
+            shape: 'circle',
+            radius: "45%",
             triggerEvent: true,
-            // type: 'default',
+            type: 'radar',
             name: {
               textStyle: {
                 color: "#39DCF4",
                 fontSize: "6",
                 // borderRadius: 3,
-                padding: [10, 10],
+                padding: [1,1],
               },
             },
             nameGap: "2",
@@ -913,14 +913,14 @@
         var cunArr = [];
         var danArr = [];
         var junArr = [];
-        var zhenArr = [];
+        var zenArr = [];
         for (var i = 0; i < resArr.length; i++) {
           nameArr.push(resArr[i].name);
           caiArr.push(resArr[i].value);
           cunArr.push(resArr[i].cai);
           danArr.push(resArr[i].cun);
           junArr.push(resArr[i].dan);
-          zhenArr.push(resArr[i].jun);
+          zenArr.push(resArr[i].jun);
         }
         var yearsNumChart = echarts.init(document.getElementById("yearsNumId"));
         var spNum = 5,
@@ -931,9 +931,9 @@
           _data2 = cunArr.reverse(),
           _data3 = danArr.reverse();
         _data4 = junArr.reverse();
-        _data5 = zhenArr.reverse();
+        _data5 = zenArr.reverse();
         var fomatter_fn = function (v) {
-          return ((v.value / _max) * 100).toFixed(0);
+          return ((v.value / _max) * 100).toFixed(3);
         };
         var _label = {
           normal: {
@@ -949,10 +949,10 @@
         var option = {
           grid: {
             containLabel: true,
-            left: 0,
-            top: 0,
-            right: 0,
-            bottom: 0,
+            left: 5,
+            top: 2,
+            right: 5,
+            bottom: 2,
           },
           tooltip: {
             show: true,
@@ -963,7 +963,7 @@
               color: "#3c3c3c",
               fontSize: 16,
             },
-            extraCssText: "box-shadow: 0 0 5px rgba(0, 0, 0, 0.1)",
+            extraCssText: "box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)",
           },
           xAxis: {
             splitNumber: spNum,
@@ -1034,7 +1034,7 @@
               name: "宋词",
               stack: "2",
               legendHoverLink: false,
-              barWidth: 20,
+              barWidth: 7,
               label: _label,
               itemStyle: {
                 normal: {
@@ -1051,7 +1051,7 @@
               stack: "2",
               name: "元曲",
               legendHoverLink: false,
-              barWidth: 20,
+              barWidth: 7,
               label: _label,
               itemStyle: {
                 normal: {
@@ -1068,7 +1068,7 @@
               stack: "2",
               name: "明清小说",
               legendHoverLink: false,
-              barWidth: 20,
+              barWidth: 7,
               label: _label,
               itemStyle: {
                 normal: {
@@ -1085,7 +1085,7 @@
               stack: "2",
               name: "楚辞",
               legendHoverLink: false,
-              barWidth: 20,
+              barWidth: 7,
               label: _label,
               itemStyle: {
                 normal: {
