@@ -486,15 +486,17 @@
           legend: {
             itemWidth: 6, // 标志图形的长度
             itemHeight: 6, // 标志图形的宽度
-            orient: "vertical",
+            itemGap: 6,
+            // orient: "horizontal",
             // left: 'right',
-            top: "15%",
-            x: "50%",
+            top: "70%",
+            right: "20%",
+            x: "0%",
             data: datas,
             textStyle: {
               //图例文字的样式
               color: "#fff",
-              fontSize: 6,
+              fontSize: 4,
             },
           },
           series: [
@@ -502,7 +504,7 @@
               name: "占比",
               type: "pie",
               radius: "75%",
-              center: ["20%", "50%"],
+              center: ["30%", "35%"],
               animationDuration: 2500,
               data: datas,
               label: {
