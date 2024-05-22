@@ -843,7 +843,7 @@
                 color: "#39DCF4",
                 fontSize: "6",
                 // borderRadius: 3,
-                padding: [1,1],
+                padding: [1, 1],
               },
             },
             nameGap: "2",
@@ -930,8 +930,8 @@
           _data1 = caiArr.reverse(),
           _data2 = cunArr.reverse(),
           _data3 = danArr.reverse();
-          _data4 = junArr.reverse();
-          _data5 = zenArr.reverse();
+        _data4 = junArr.reverse();
+        _data5 = zenArr.reverse();
         var fomatter_fn = function (v) {
           return ((v.value / _max) * 100).toFixed(2);
         };
@@ -942,17 +942,17 @@
             // formatter: fomatter_fn,
             textStyle: {
               color: "#fff",
-              fontSize: 6,
+              fontSize: 8,
             },
           },
         };
         var option = {
           grid: {
             containLabel: true,
-            left: "3%",
-            right: "0%",
-            top: "5%",
-            bottom: "0%",
+            left: 15,
+            right: 15,
+            top: 25,
+            bottom: 0,
           },
           tooltip: {
             show: true,
@@ -1018,7 +1018,8 @@
               stack: "2",
               label: _label,
               legendHoverLink: false,
-              barWidth: 10,
+              barWidth: 8, // 让 ECharts 自动计算合适的柱子宽度  
+              barGap: '30%', // 设置柱子之间的间隙为容器宽度的 30%  
               itemStyle: {
                 normal: {
                   color: "#FD9133",
@@ -1027,6 +1028,7 @@
                   color: "#FD9133",
                 },
               },
+              zooLock: true,
               data: _data1,
             },
             {
@@ -1034,7 +1036,8 @@
               name: "宋词",
               stack: "2",
               legendHoverLink: false,
-              barWidth: 10,
+              barWidth: 8,
+              barGap: '30%',
               label: _label,
               itemStyle: {
                 normal: {
@@ -1044,6 +1047,7 @@
                   color: "#2E8CFF",
                 },
               },
+              zooLock: true,
               data: _data2,
             },
             {
@@ -1051,7 +1055,8 @@
               stack: "2",
               name: "元曲",
               legendHoverLink: false,
-              barWidth: 10,
+              barWidth: 8,
+              barGap: '30%',
               label: _label,
               itemStyle: {
                 normal: {
@@ -1061,6 +1066,7 @@
                   color: "#37D2D4",
                 },
               },
+              zooLock: true,
               data: _data3,
             },
             {
@@ -1068,7 +1074,8 @@
               stack: "2",
               name: "明清小说",
               legendHoverLink: false,
-              barWidth: 10,
+              barWidth: 8,
+              barGap: '30%',
               label: _label,
               itemStyle: {
                 normal: {
@@ -1078,6 +1085,7 @@
                   color: "#19CA88",
                 },
               },
+              zooLock: true,
               data: _data4,
             },
             {
@@ -1085,7 +1093,8 @@
               stack: "2",
               name: "楚辞",
               legendHoverLink: false,
-              barWidth: 10,
+              barWidth: 8,
+              barGap: '30%',
               label: _label,
               itemStyle: {
                 normal: {
@@ -1095,6 +1104,7 @@
                   color: "#0EFCFF",
                 },
               },
+              zooLock: true,
               data: _data5,
             },
           ],
