@@ -747,25 +747,25 @@
               data: data,
             },
             // 两个环，装饰用
-            {
-              color: '#0EFCFF',
-              type: 'pie',
-              radius: ['9', '11'],
-              center: ['50%', '60%'],
-              data: [100],
-              label: {
-                show: false
-              }
-            },
-            {
-              type: 'pie',
-              radius: ['14', '16'],
-              center: ['50%', '60%'],
-              data: [100],
-              label: {
-                show: false
-              }
-            }
+            // {
+            //   color: '#0EFCFF',
+            //   type: 'pie',
+            //   radius: ['9', '11'],
+            //   center: ['50%', '60%'],
+            //   data: [100],
+            //   label: {
+            //     show: false
+            //   }
+            // },
+            // {
+            //   type: 'pie',
+            //   radius: ['14', '16'],
+            //   center: ['50%', '60%'],
+            //   data: [100],
+            //   label: {
+            //     show: false
+            //   }
+            // }
           ],
         };
         departmentChart.setOption(option);
@@ -1063,40 +1063,40 @@
               },
               data: _data3,
             },
-            // {
-            //   type: "bar",
-            //   stack: "2",
-            //   name: "明清小说",
-            //   legendHoverLink: false,
-            //   barWidth: 20,
-            //   label: _label,
-            //   itemStyle: {
-            //     normal: {
-            //       color: "#19CA88",
-            //     },
-            //     emphasis: {
-            //       color: "#19CA88",
-            //     },
-            //   },
-            //   data: _data4,
-            // },
-            // {
-            //   type: "bar",
-            //   stack: "2",
-            //   name: "楚辞",
-            //   legendHoverLink: false,
-            //   barWidth: 20,
-            //   label: _label,
-            //   itemStyle: {
-            //     normal: {
-            //       color: "#0EFCFF",
-            //     },
-            //     emphasis: {
-            //       color: "#0EFCFF",
-            //     },
-            //   },
-            //   data: _data5,
-            // },
+            {
+              type: "bar",
+              stack: "2",
+              name: "明清小说",
+              legendHoverLink: false,
+              barWidth: 20,
+              label: _label,
+              itemStyle: {
+                normal: {
+                  color: "#19CA88",
+                },
+                emphasis: {
+                  color: "#19CA88",
+                },
+              },
+              data: _data4,
+            },
+            {
+              type: "bar",
+              stack: "2",
+              name: "楚辞",
+              legendHoverLink: false,
+              barWidth: 20,
+              label: _label,
+              itemStyle: {
+                normal: {
+                  color: "#0EFCFF",
+                },
+                emphasis: {
+                  color: "#0EFCFF",
+                },
+              },
+              data: _data5,
+            },
           ],
         };
         yearsNumChart.setOption(option);
@@ -1324,7 +1324,7 @@
               axisLabel: {
                 interval: 0,
                 textStyle: {
-                  fontSize: 8,
+                  fontSize: 3,
                   color: "rgba(255,255,255,.7)",
                 },
               },
