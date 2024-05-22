@@ -144,7 +144,7 @@
           </div>
           <div class="main_top_left_top main_top_left_bottom">
             <img src="./images/main_top_left.png" />
-            <div class="main_top_left_top_title">各朝代学习人数占比</div>
+            <div class="main_top_left_top_title">各时期古诗词占比</div>
             <div id="questionId" class="main_top_left_top_con"></div>
           </div>
         </div>
@@ -623,12 +623,10 @@
           $(".main_top_middle_num_list" + (names.length - j)).text(names.substr(j, 1));
         }
         var dataArr = [
-          { name: "西北", value: 300 },
-          { name: "西南", value: 500 },
-          { name: "东北", value: 400 },
+          { name: "四川", value: 300 },
+          { name: "重庆", value: 500 },
           { name: "东南", value: 350 },
           { name: "华北", value: 363 },
-          { name: "华中", value: 800 },
         ];
         for (var i = 1; i < dataArr.length; i++) {
           $(".main_top_left_c_l_n" + i)
@@ -638,7 +636,7 @@
         var threeTasksChart = echarts.init(document.getElementById("threeTasksId"));
         var data = dataArr;
         var option = {
-          color: ["#38EB70", "#2E8CFF", "#0EFCFF", "#858FF8", "#FD9133", "#F7E270"],
+          color: ["#2E8CFF", "#0EFCFF", "#FD9133", "#F7E270"],
           tooltip: {
             trigger: "item",
             formatter: "{a} <br/>{b} : {c} ({d}%)",
@@ -679,7 +677,7 @@
           threeTasksChart.setOption(option);
         }, 4000);
       },
-      // 各部门诗词占比
+      // 各朝代诗词占比
       departmentFn: function () {
         var dataArr = [
           { name: "秦", value: 34 },
@@ -703,26 +701,26 @@
             trigger: "item",
             formatter: "{a} <br/>{b} : {c} ({d}%)",
           },
-          legend: {
-            itemWidth: 6, // 标志图形的长度
-            itemHeight: 6, // 标志图形的宽度
-            orient: "vertical",
-            // left: 'right',
-            top: "50%",
-            bottom: "50%",
-            x: "5%",
-            textStyle: {
-              color: "#fff",
-              fontSize: 8,
-            },
-            data: data,
-          },
+          // legend: {
+          //   itemWidth: 6, // 标志图形的长度
+          //   itemHeight: 6, // 标志图形的宽度
+          //   orient: "vertical",
+          //   // left: 'right',
+          //   top: "50%",
+          //   bottom: "50%",
+          //   x: "5%",
+          //   textStyle: {
+          //     color: "#fff",
+          //     fontSize: 8,
+          //   },
+          //   data: data,
+          // },
           series: [
             {
               name: "学习倾向",
               type: "pie",
-              radius: ["40%", "30%"],
-              center: ["70%", "63%"],
+              radius: ["50%", "40%"],
+              center: ["50%", "60%"],
               labelLine: {
                 normal: {
                   length: 5,
@@ -748,26 +746,26 @@
               },
               data: data,
             },
-            //两个不能自动调大小的环，装饰用
-            // {
-            //   color: '#0EFCFF',
-            //   type: 'pie',
-            //   radius: ['55', '56'],
-            //   center: ['78%', '52%'],
-            //   data: [100],
-            //   label: {
-            //     show: false
-            //   }
-            // },
-            // {
-            //   type: 'pie',
-            //   radius: ['25', '26'],
-            //   center: ['78%', '52%'],
-            //   data: [100],
-            //   label: {
-            //     show: false
-            //   }
-            // }
+            // 两个环，装饰用
+            {
+              color: '#0EFCFF',
+              type: 'pie',
+              radius: ['9', '11'],
+              center: ['50%', '60%'],
+              data: [100],
+              label: {
+                show: false
+              }
+            },
+            {
+              type: 'pie',
+              radius: ['14', '16'],
+              center: ['50%', '60%'],
+              data: [100],
+              label: {
+                show: false
+              }
+            }
           ],
         };
         departmentChart.setOption(option);

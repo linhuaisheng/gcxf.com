@@ -3,7 +3,7 @@
 /**/
 .main_con {
   position: absolute;
-  width: 97%;
+  width: 98%;
   height: 95%;
   left: 0;
   right: 0;
@@ -25,11 +25,11 @@
 .main_top_left_top {
   position: relative;
   width: 100%;
-  height: 45%;
+  height: 35%;
   /* background: green; */
 }
 .main_top_left_bottom {
-  margin-top: 8%;
+  margin-top: 16%;
 }
 .main_top_left_bottom_num {
   width: 100%;
@@ -104,24 +104,24 @@
 .main_top_left_top_title {
   text-align: center;
   color: #0efcff;
-  font-size: 1%;
+  font-size: 1.8vw;
   padding-top: 0.4vw;
 }
 .main_top_left_top_con {
-  width: 92%;
-  height: 41%;
+  width: 85%;
+  height: 40%;
   margin: auto;
-  margin-top: 6%;
+  margin-top: 28%;
   color: white;
-  margin-left: 4%;
-  text-indent: 2vw;
-  font-size: 1.4vw;
+  margin-left: 10%;
+  text-indent: 0.5vw;
+  font-size: 1.2vw;
   /* letter-spacing: .15vw; */
 }
 .main_top_left_top_con span {
   display: inline-block;
-  margin-top: 0.8vw;
-  text-indent: 0vw;
+  margin-top: 1.5vw;
+  text-indent: 0.1vw;
 }
 .main_top_left_top_con_left {
   float: left;
@@ -286,7 +286,7 @@
   top: 20%;
   height: 34%;
   width: 12%;
-  margin-left: 2.6%;
+  margin-left: 5.6%;
   font-size: 2vw;
   font-weight: bold;
   color: #0efcff;
@@ -316,7 +316,7 @@
   position: relative;
   float: left;
   width: 49%;
-  height: 100%;
+  height: 75%;
 }
 .main_top_middle_bottom_echarts_right {
   float: right;
@@ -333,7 +333,8 @@
   /* background: white; */
 }
 .main_top_echarts_con_title {
-  font-size: 0.8vw;
+  font-size: 2.3vw;
+  text-align: center;
   color: #0efcff;
 }
 .main_top_echarts_pie {
@@ -388,7 +389,7 @@
 }
 .main_middle_list img {
   position: absolute;
-  width: 50%;
+  width: 35%;
   height: 50%;
 }
 .main_middle_list:nth-child(1) {
@@ -417,8 +418,8 @@
 .main_bottom_top {
   float: left;
   width: 100%;
-  height: 36.5%;
-  margin-top: 1.5%;
+  height: 16.5%;
+  margin-top: 5%;
 }
 .main_bottom_top_list {
   position: relative;
@@ -439,10 +440,10 @@
   z-index: 80;
   position: relative;
   width: 100%;
-  padding-top: 1.6vw;
-  font-size: 0.8vw;
+  padding-top: 2vw;
+  font-size: 2.2vw;
   color: white;
-  text-indent: 3.2vw;
+  text-indent: 3vw;
 }
 .main_bottom_t_l_chart {
   z-index: 77;
@@ -458,7 +459,7 @@
   width: 92%;
   height: 60%;
   margin: auto;
-  margin-top: 3%;
+  margin-top: 10%;
   /* overflow: hidden; */
 }
 .main_bottom_t_l_main,
@@ -485,6 +486,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-size: 1vw;
 }
 .main_bottom_t_list_time {
   float: left;
@@ -494,12 +496,13 @@
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: right;
+  font-size: 1vw;
 }
 .main_bottom_bottom {
   float: left;
   width: 100%;
   height: 54%;
-  margin-top: 1%;
+  margin-top: 5%;
 }
 .main_bottom_b_left,
 .main_bottom_b_right {
