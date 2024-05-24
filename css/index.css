@@ -500,7 +500,7 @@
   text-overflow: ellipsis;
   text-align: right;
   font-size: 0.4vw;
-  line-height: 1.5;
+  line-height: 4;
 }
 .main_bottom_bottom {
   float: left;
