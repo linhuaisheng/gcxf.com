@@ -444,9 +444,10 @@
   position: relative;
   width: 100%;
   padding-top: 2vw;
+  padding-bottom: 0.2vw;
   font-size: 2.2vw;
   color: white;
-  text-indent: 3vw;
+  text-indent: 2vw;
 }
 .main_bottom_t_l_chart {
   z-index: 77;
