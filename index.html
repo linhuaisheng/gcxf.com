@@ -25,40 +25,40 @@
             <div class="main_top_left_top_title">诗词数据展示</div>
             <div class="main_top_left_top_con">
               <div class="main_top_left_top_con_list">
-                <span>绝句</span>
+                <!-- <span>绝句</span> -->
                 <span class="main_top_left_c_l_n main_top_left_c_l_n1">0</span>
                 <p></p>
               </div>
               <div class="main_top_left_top_con_list">
-                <span>律诗</span>
+                <!-- <span>律诗</span> -->
                 <span class="main_top_left_c_l_n main_top_left_c_l_n2">0</span>
                 <p></p>
               </div>
               <div class="main_top_left_top_con_list">
-                 <span>乐府诗</span>
-                <span class="main_top_left_c_l_n main_top_left_c_l_n3">0</span>
+                 <!-- <span>乐府诗</span> -->
+                <span class="main_top_left_c_l_n daysData1">0</span>
                 <p></p>
               </div>
               <div class="main_top_left_top_con_left">
                 <div class="main_top_left_t_c_l_left">
-                  <span>null</span>
-                  <span class="main_top_left_c_l_n main_top_left_c_l_n4">0</span>
+                  <!-- <span>null</span> -->
+                  <span class="main_top_left_c_l_n daysData2">0</span>
                   <p></p>
                 </div>
                 <div class="main_top_left_t_c_l_right">
-                  <span>null</span>
-                  <span class="main_top_left_c_l_n main_top_left_c_l_n5">0</span>
+                  <!-- <span>null</span> -->
+                  <span class="main_top_left_c_l_n daysData3">0</span>
                   <p></p>
                 </div>
               </div>
               <div class="main_top_left_top_con_right main_top_left_top_con_right2">
                 <div class="main_top_left_t_c_r_left">
-                  <span>null</span>
+                  <!-- <span>null</span> -->
                   <span class="main_top_left_c_l_n">0</span>
                   <p></p>
                 </div>
                 <div class="main_top_left_t_c_r_right">
-                  <span>null</span>
+                  <!-- <span>null</span> -->
                   <span class="main_top_left_c_l_n">0</span>
                   <p></p>
                 </div>
@@ -353,6 +353,9 @@
         $(".monthData").addClass("counter-value").text("909");
         $(".someThing").addClass("counter-value").text("980");
         $(".policyData").addClass("counter-value").text("200");
+        $(".daysData1").addClass("counter-value").text("108");
+        $(".daysData2").addClass("counter-value").text("88");
+        $(".daysData3").addClass("counter-value").text("32");
       },
       // 基础信息
       baseInfo: function () {
@@ -634,8 +637,8 @@
           { name: "云南", value: 300 },
           { name: "贵州", value: 500 },
           { name: "四川", value: 363 },
-          { name: "北京", value: 363 },
-          { name: "陕西", value: 363 },
+          // { name: "北京", value: 363 },
+          // { name: "陕西", value: 363 },
 
         ];
         for (var i = 1; i < dataArr.length; i++) {
