@@ -53,6 +53,25 @@ function numInit2() {
       );
   });
 }
+function numInit3() {
+  $(".counter-value3").each(function () {
+    $(this)
+      .prop("Counter", 0)
+      .animate(
+        {
+          Counter: $(this).text(),
+        },
+        {
+          duration: 2500,
+          easing: "swing",
+          step: function (now) {
+            $(this).text(now.toFixed(3));
+          },
+        }
+      );
+  });
+}
 numInit();
 numInit1();
 numInit2();
+numInit3();
