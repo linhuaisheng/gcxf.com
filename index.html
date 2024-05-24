@@ -122,11 +122,11 @@
             <div class="main_top_left_top_con">
               <div class="main_top_left_top_con_left">
                 <span class="daysData">0</span>
-                <p>先秦</p>
+                <p>秦</p>
               </div>
               <div class="main_top_left_top_con_right">
                 <span class="weekData">0</span>
-                <p>秦汉</p>
+                <p>汉</p>
               </div>
               <div class="main_top_left_top_con_list">
                 <span class="monthData">0</span>
@@ -138,7 +138,7 @@
               </div>
               <div class="main_top_left_top_con_list">
                 <span class="policyData">0</span>
-                <p>明清</p>
+                <p>明</p>
               </div>
             </div>
           </div>
@@ -462,12 +462,10 @@
       // 各学习人数占比
       questionFn: function () {
         var numArr = [
-          { name: "秦", value: 300 },
           { name: "汉", value: 500 },
           { name: "唐", value: 400 },
           { name: "宋", value: 350 },
           { name: "明", value: 363 },
-          { name: "清", value: 800 },
         ];
         // for(var i = 0; i < data.list.length; i++) {
         //     numArr.push({name: data.list[i].name,value: data.list[i].num})
@@ -484,27 +482,28 @@
           },
           color: ["#2E8CFF", "#FD9133", "#37D2D4", "#19CA88", "#858FF8", "#FFFF00"],
           legend: {
-            itemWidth: 6, // 标志图形的长度
-            itemHeight: 6, // 标志图形的宽度
-            itemGap: 6,
+            itemWidth: 4, // 标志图形的长度
+            itemHeight: 4, // 标志图形的宽度
+            itemGap: 4,
             // orient: "horizontal",
             // left: 'right',
-            top: "70%",
-            right: "20%",
+            top: "-10%",
+            right: "-10%",
             x: "0%",
             data: datas,
             textStyle: {
               //图例文字的样式
               color: "#fff",
-              fontSize: 4,
+              fontSize: 3,
+
             },
           },
           series: [
             {
               name: "占比",
               type: "pie",
-              radius: "75%",
-              center: ["30%", "35%"],
+              radius: "60%",
+              center: ["60%", "76%"],
               animationDuration: 2500,
               data: datas,
               label: {
