@@ -472,7 +472,7 @@
 }
 .main_bottom_t_l_main_list {
   font-size: 0.7vw;
-  line-height: 2;
+  line-height: 1.6vw;
   height: 1.6vw;
   color: white;
 }
@@ -489,7 +489,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 0.8vw;
+  font-size: 0.4vw;
 }
 .main_bottom_t_list_time {
   float: left;
@@ -499,7 +499,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: right;
-  font-size: 0.8vw;
+  font-size: 0.4vw;
 }
 .main_bottom_bottom {
   float: left;
